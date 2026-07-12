@@ -2,40 +2,40 @@ package LifeOS.Resources.Exercises;
 
 public class Exercise {
 
-    static String splitday;
-    static String exercisename;
-    static int repsormins;
-    static String weightordifficulty;
+    private String splitday;
+    private String exercisename;
+    private int repsormins;
+    private String weightordifficulty;
 
-    public static String getSplitday() {
+    public String getSplitday() {
         return splitday;
     }
 
-    public static void setSplitday(String splitday) {
-        Exercise.splitday = splitday;
+    public void setSplitday(String splitday) {
+        this.splitday = splitday;
     }
 
-    public static String getExercisename() {
+    public String getExercisename() {
         return exercisename;
     }
 
-    public static void setExercisename(String exercisename) {
-        Exercise.exercisename = exercisename;
+    public void setExercisename(String exercisename) {
+        this.exercisename = exercisename;
     }
 
-    public static int getRepsormins() {
+    public int getRepsormins() {
         return repsormins;
     }
 
-    public static void setRepsormins(int repsormins) {
-        Exercise.repsormins = repsormins;
+    public void setRepsormins(int repsormins) {
+        this.repsormins = repsormins;
     }
 
-    public static String getWeightordifficulty() {
+    public String getWeightordifficulty() {
         return weightordifficulty;
     }
 
-    public static void setWeightordifficulty(String weightordifficulty) {
-        Exercise.weightordifficulty = weightordifficulty;
+    public void setWeightordifficulty(String weightordifficulty) {
+        this.weightordifficulty = weightordifficulty;
     }
 }

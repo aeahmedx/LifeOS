@@ -1,14 +1,12 @@
 package LifeOS.DayToDay.School;
 
+import java.util.ArrayList;
+
 public class School {
 
-    static SchoolWork schoolWork;
+    private ArrayList<SchoolWork> schoolWork;
 
-    public static SchoolWork getSchoolWork() {
+    public ArrayList<SchoolWork> getSchoolWork() {
         return schoolWork;
-    }
-
-    public static void setSchoolWork(SchoolWork schoolWork) {
-        School.schoolWork = schoolWork;
     }
 }

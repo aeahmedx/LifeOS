@@ -6,51 +6,51 @@ import java.time.LocalDateTime;
 
 public class Appointment {
 
-    static String apptTitle;
-    static String meetingtype;
-    static Location apptlocation;
-    static LocalDateTime appttime;
-    static String apptNotes;
+    private String apptTitle;
+    private String meetingtype;
+    private Location apptlocation;
+    private LocalDateTime appttime;
+    private String apptNotes;
 
 
-    public static String getApptTitle() {
+    public String getApptTitle() {
         return apptTitle;
     }
 
-    public static void setApptTitle(String apptTitle) {
-        Appointment.apptTitle = apptTitle;
+    public void setApptTitle(String apptTitle) {
+        this.apptTitle = apptTitle;
     }
 
-    public static String getMeetingtype() {
+    public String getMeetingtype() {
         return meetingtype;
     }
 
-    public static void setMeetingtype(String meetingtype) {
-        Appointment.meetingtype = meetingtype;
+    public void setMeetingtype(String meetingtype) {
+        this.meetingtype = meetingtype;
     }
 
-    public static Location getApptlocation() {
+    public Location getApptlocation() {
         return apptlocation;
     }
 
-    public static void setApptlocation(Location apptlocation) {
-        Appointment.apptlocation = apptlocation;
+    public void setApptlocation(Location apptlocation) {
+        this.apptlocation = apptlocation;
     }
 
-    public static LocalDateTime getAppttime() {
+    public LocalDateTime getAppttime() {
         return appttime;
     }
 
-    public static void setAppttime(LocalDateTime appttime) {
-        Appointment.appttime = appttime;
+    public void setAppttime(LocalDateTime appttime) {
+        this.appttime = appttime;
     }
 
-    public static String getApptNotes() {
+    public String getApptNotes() {
         return apptNotes;
     }
 
-    public static void setApptNotes(String apptNotes) {
-        Appointment.apptNotes = apptNotes;
+    public void setApptNotes(String apptNotes) {
+        this.apptNotes = apptNotes;
     }
 
 }

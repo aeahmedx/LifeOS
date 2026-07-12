@@ -2,31 +2,31 @@ package LifeOS.Resources.Groceries;
 
 public class GroceryItem {
 
-    static String foodname;
-    static String foodcategory;
-    static double cost;
+    private String foodname;
+    private String foodcategory;
+    private double cost;
 
-    public static String getFoodname() {
+    public String getFoodname() {
         return foodname;
     }
 
-    public static void setFoodname(String foodname) {
-        GroceryItem.foodname = foodname;
+    public void setFoodname(String foodname) {
+        this.foodname = foodname;
     }
 
-    public static String getFoodcategory() {
+    public String getFoodcategory() {
         return foodcategory;
     }
 
-    public static void setFoodcategory(String foodcategory) {
-        GroceryItem.foodcategory = foodcategory;
+    public void setFoodcategory(String foodcategory) {
+        this.foodcategory = foodcategory;
     }
 
-    public static double getCost() {
+    public double getCost() {
         return cost;
     }
 
-    public static void setCost(double cost) {
-        GroceryItem.cost = cost;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 }

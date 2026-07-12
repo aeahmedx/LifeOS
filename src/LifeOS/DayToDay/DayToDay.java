@@ -6,72 +6,44 @@ import LifeOS.DayToDay.DailyCompoundingHabits.DailyCompoundingHabits;
 import LifeOS.DayToDay.Finances.Finances;
 import LifeOS.DayToDay.OpenLoops.OpenLoops;
 import LifeOS.DayToDay.TodayTomorrow.Today.Today;
-import LifeOS.DayToDay.TodayTomorrow.Tomorrow;
+import LifeOS.DayToDay.TodayTomorrow.Tomorrow.Tomorrow;
 
 public class DayToDay {
 
-    static Today today;
-    static OpenLoops openLoops;
-    static CompletionList completionList;
-    static Tomorrow tomorrow;
-    static Finances finances;
-    static DailyCompoundingHabits dailyCompoundingHabits;
-    static AppointmentsMeetings appointments;
+    private Today today;
+    private OpenLoops openLoops;
+    private CompletionList completionList;
+    private Tomorrow tomorrow;
+    private Finances finances;
+    private DailyCompoundingHabits dailyCompoundingHabits;
+    private AppointmentsMeetings appointments;
 
-    public static Today getToday() {
+    public Today getToday() {
         return today;
     }
 
-    public static void setToday(Today today) {
-        DayToDay.today = today;
-    }
-
-    public static OpenLoops getOpenLoops() {
+    public OpenLoops getOpenLoops() {
         return openLoops;
     }
 
-    public static void setOpenLoops(OpenLoops openLoops) {
-        DayToDay.openLoops = openLoops;
-    }
-
-    public static CompletionList getCompletionList() {
+    public CompletionList getCompletionList() {
         return completionList;
     }
 
-    public static void setCompletionList(CompletionList completionList) {
-        DayToDay.completionList = completionList;
-    }
-
-    public static Tomorrow getTomorrow() {
+    public Tomorrow getTomorrow() {
         return tomorrow;
     }
 
-    public static void setTomorrow(Tomorrow tomorrow) {
-        DayToDay.tomorrow = tomorrow;
-    }
-
-    public static Finances getFinances() {
+    public Finances getFinances() {
         return finances;
     }
 
-    public static void setFinances(Finances finances) {
-        DayToDay.finances = finances;
-    }
-
-    public static DailyCompoundingHabits getDailyCompoundingHabits() {
+    public DailyCompoundingHabits getDailyCompoundingHabits() {
         return dailyCompoundingHabits;
     }
 
-    public static void setDailyCompoundingHabits(DailyCompoundingHabits dailyCompoundingHabits) {
-        DayToDay.dailyCompoundingHabits = dailyCompoundingHabits;
-    }
-
-    public static AppointmentsMeetings getAppointments() {
+    public AppointmentsMeetings getAppointments() {
         return appointments;
-    }
-
-    public static void setAppointments(AppointmentsMeetings appointments) {
-        DayToDay.appointments = appointments;
     }
 
 }

@@ -2,13 +2,13 @@ package LifeOS.Resources.Affirmations;
 
 public class Affirmation {
 
-    static String affirmation;
+    private String affirmation;
 
-    public static String getAffirmation() {
+    public String getAffirmation() {
         return affirmation;
     }
 
-    public static void setAffirmation(String affirmation) {
-        Affirmation.affirmation = affirmation;
+    public void setAffirmation(String affirmation) {
+        this.affirmation = affirmation;
     }
 }

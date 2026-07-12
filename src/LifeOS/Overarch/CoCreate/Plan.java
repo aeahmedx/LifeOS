@@ -5,7 +5,16 @@ import java.util.ArrayList;
 
 public class Plan {
 
-    static String plan;
-    static ArrayList<Image> images;
+    private String plan;
+
+    private ArrayList<Image> images;
+
+    public ArrayList<Image> getImages() {
+        return images;
+    }
+
+    public void setImages(ArrayList<Image> images) {
+        this.images = images;
+    }
 
 }

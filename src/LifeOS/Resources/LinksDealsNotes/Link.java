@@ -2,9 +2,9 @@ package LifeOS.Resources.LinksDealsNotes;
 
 public class Link {
 
-    public String link;
+    private String link;
 
-    public String getLink() {
+    private String getLink() {
         return link;
     }
 

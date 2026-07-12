@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 public class Today {
 
-    static ArrayList<TdTmTask> todaytask;
+    private ArrayList<TdTmTask> todaytask;
+
+    public ArrayList<TdTmTask> getTodaytask() {
+        return todaytask;
+    }
 
 }

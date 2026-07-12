@@ -4,14 +4,11 @@ import java.util.ArrayList;
 
 public class CoCreate {
 
-    static ArrayList<Plan> plans;
+    private ArrayList<Plan> plans;
 
-    public static ArrayList<Plan> getPlans() {
+    public
+    ArrayList<Plan> getPlans() {
         return plans;
-    }
-
-    public static void setPlans(ArrayList<Plan> plans) {
-        CoCreate.plans = plans;
     }
 
 }

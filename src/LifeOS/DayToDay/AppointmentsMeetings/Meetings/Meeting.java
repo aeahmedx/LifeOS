@@ -6,40 +6,40 @@ import java.time.LocalDateTime;
 
 public class Meeting {
 
-    static String mttgTitle;
-    static Location mttglocation;
-    static LocalDateTime mttgtime;
-    static String mttgNotes;
+    private String mttgTitle;
+    private Location mttglocation;
+    private LocalDateTime mttgtime;
+    private String mttgNotes;
 
-    public static String getMttgTitle() {
+    public String getMttgTitle() {
         return mttgTitle;
     }
 
-    public static void setMttgTitle(String mttgTitle) {
-        Meeting.mttgTitle = mttgTitle;
+    public void setMttgTitle(String mttgTitle) {
+        this.mttgTitle = mttgTitle;
     }
 
-    public static Location getMttglocation() {
+    public Location getMttglocation() {
         return mttglocation;
     }
 
-    public static void setMttglocation(Location mttglocation) {
-        Meeting.mttglocation = mttglocation;
+    public void setMttglocation(Location mttglocation) {
+        this.mttglocation = mttglocation;
     }
 
-    public static LocalDateTime getMttgtime() {
+    public LocalDateTime getMttgtime() {
         return mttgtime;
     }
 
-    public static void setMttgtime(LocalDateTime mttgtime) {
-        Meeting.mttgtime = mttgtime;
+    public void setMttgtime(LocalDateTime mttgtime) {
+        this.mttgtime = mttgtime;
     }
 
-    public static String getMttgNotes() {
+    public String getMttgNotes() {
         return mttgNotes;
     }
 
-    public static void setMttgNotes(String mttgNotes) {
-        Meeting.mttgNotes = mttgNotes;
+    public void setMttgNotes(String mttgNotes) {
+        this.mttgNotes = mttgNotes;
     }
 }

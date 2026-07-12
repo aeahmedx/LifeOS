@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class SchoolWork {
 
-    static ArrayList<SchoolWork> schoolWork;
+    private ArrayList<SchoolWork> schoolWork;
 
-    public static ArrayList<SchoolWork> getSchoolWork() {
+    public ArrayList<SchoolWork> getSchoolWork() {
         return schoolWork;
     }
 
-    public static void setSchoolWork(ArrayList<SchoolWork> schoolWork) {
-        SchoolWork.schoolWork = schoolWork;
+    public void setSchoolWork(ArrayList<SchoolWork> schoolWork) {
+        this.schoolWork = schoolWork;
     }
 }

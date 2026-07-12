@@ -2,13 +2,13 @@ package LifeOS.Overarch.Thermostat;
 
 public class Temperature {
 
-    static String temperature;
+    private String temperature;
 
-    public static String getTemperature() {
+    public String getTemperature() {
         return temperature;
     }
 
-    public static void setTemperature(String temperature) {
-        Temperature.temperature = temperature;
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
     }
 }

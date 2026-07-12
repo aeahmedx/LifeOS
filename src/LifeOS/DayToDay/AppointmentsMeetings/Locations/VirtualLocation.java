@@ -2,13 +2,13 @@ package LifeOS.DayToDay.AppointmentsMeetings.Locations;
 
 public class VirtualLocation {
 
-    static String virtualLocation;
+    private String virtualLocation;
 
-    public static String getVirtualLocation() {
+    public String getVirtualLocation() {
         return virtualLocation;
     }
 
-    public static void setVirtualLocation(String virtualLocation) {
-        VirtualLocation.virtualLocation = virtualLocation;
+    public void setVirtualLocation(String virtualLocation) {
+        this.virtualLocation = virtualLocation;
     }
 }

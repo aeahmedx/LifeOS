@@ -4,40 +4,40 @@ import java.time.LocalDate;
 
 public class Goal {
 
-    static String thegoal;
-    static String thewhy;
-    static LocalDate goaldeadline;
-    static String dailyminimum;
+    private String thegoal;
+    private String thewhy;
+    private LocalDate goaldeadline;
+    private String dailyminimum;
 
-    public static String getThegoal() {
+    public String getThegoal() {
         return thegoal;
     }
 
-    public static void setThegoal(String thegoal) {
-        Goal.thegoal = thegoal;
+    public void setThegoal(String thegoal) {
+        this.thegoal = thegoal;
     }
 
-    public static String getThewhy() {
+    public String getThewhy() {
         return thewhy;
     }
 
-    public static void setThewhy(String thewhy) {
-        Goal.thewhy = thewhy;
+    public void setThewhy(String thewhy) {
+        this.thewhy = thewhy;
     }
 
-    public static LocalDate getGoaldeadline() {
+    public LocalDate getGoaldeadline() {
         return goaldeadline;
     }
 
-    public static void setGoaldeadline(LocalDate goaldeadline) {
-        Goal.goaldeadline = goaldeadline;
+    public void setGoaldeadline(LocalDate goaldeadline) {
+        this.goaldeadline = goaldeadline;
     }
 
-    public static String getDailyminimum() {
+    public String getDailyminimum() {
         return dailyminimum;
     }
 
-    public static void setDailyminimum(String dailyminimum) {
-        Goal.dailyminimum = dailyminimum;
+    public void setDailyminimum(String dailyminimum) {
+        this.dailyminimum = dailyminimum;
     }
 }

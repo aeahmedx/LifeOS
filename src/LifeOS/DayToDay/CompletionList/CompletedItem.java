@@ -4,7 +4,14 @@ import java.time.LocalDate;
 
 public class CompletedItem {
 
-    static String completedItems;
-    static LocalDate date;
+    private String completedItems;
+    private LocalDate date;
 
+    public String getCompletedItems() {
+        return completedItems;
+    }
+
+    public void setCompletedItems(String completedItems) {
+        this.completedItems = completedItems;
+    }
 }

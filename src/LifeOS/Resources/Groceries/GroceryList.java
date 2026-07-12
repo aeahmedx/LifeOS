@@ -4,13 +4,9 @@ import java.util.ArrayList;
 
 public class GroceryList {
 
-    static ArrayList<GroceryItem> groceryItems;
+    private ArrayList<GroceryItem> groceryItems;
 
-    public static ArrayList<GroceryItem> getGroceryItems() {
+    public ArrayList<GroceryItem> getGroceryItems() {
         return groceryItems;
-    }
-
-    public static void setGroceryItems(ArrayList<GroceryItem> groceryItems) {
-        GroceryList.groceryItems = groceryItems;
     }
 }

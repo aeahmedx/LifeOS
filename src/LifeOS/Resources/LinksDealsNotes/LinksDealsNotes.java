@@ -4,31 +4,31 @@ import java.util.ArrayList;
 
 public class LinksDealsNotes {
 
-    static ArrayList<Link> links;
-    static ArrayList<Deal> deals;
-    static ArrayList<Note> notes;
+    private ArrayList<Link> links;
+    private ArrayList<Deal> deals;
+    private ArrayList<Note> notes;
 
-    public static ArrayList<Link> getLinks() {
+    public ArrayList<Link> getLinks() {
         return links;
     }
 
-    public static void setLinks(ArrayList<Link> links) {
-        LinksDealsNotes.links = links;
+    public void setLinks(ArrayList<Link> links) {
+        this.links = links;
     }
 
-    public static ArrayList<Deal> getDeals() {
+    public ArrayList<Deal> getDeals() {
         return deals;
     }
 
-    public static void setDeals(ArrayList<Deal> deals) {
-        LinksDealsNotes.deals = deals;
+    public void setDeals(ArrayList<Deal> deals) {
+        this.deals = deals;
     }
 
-    public static ArrayList<Note> getNotes() {
+    public ArrayList<Note> getNotes() {
         return notes;
     }
 
-    public static void setNotes(ArrayList<Note> notes) {
-        LinksDealsNotes.notes = notes;
+    public void setNotes(ArrayList<Note> notes) {
+        this.notes = notes;
     }
 }

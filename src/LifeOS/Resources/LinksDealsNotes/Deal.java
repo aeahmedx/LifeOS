@@ -2,7 +2,7 @@ package LifeOS.Resources.LinksDealsNotes;
 
 public class Deal {
 
-    public String deal;
+    private String deal;
 
     public String getDeal() {
         return deal;

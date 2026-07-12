@@ -9,40 +9,25 @@ import java.util.ArrayList;
 
 public class Resources {
 
-    static Exercises exercises;
-    static GroceryList groceryList;
-    static AffirmationList affirmationList;
-    static LinksDealsNotes linksDealsNotes;
+    private Exercises exercises;
+    private GroceryList groceryList;
+    private AffirmationList affirmationList;
+    private LinksDealsNotes linksDealsNotes;
 
-    public static Exercises getExercises() {
+    public Exercises getExercises() {
         return exercises;
     }
 
-    public static void setExercises(Exercises exercises) {
-        Resources.exercises = exercises;
-    }
-
-    public static GroceryList getGroceryList() {
+    public GroceryList getGroceryList() {
         return groceryList;
     }
 
-    public static void setGroceryList(GroceryList groceryList) {
-        Resources.groceryList = groceryList;
-    }
-
-    public static AffirmationList getAffirmationList() {
+    public AffirmationList getAffirmationList() {
         return affirmationList;
     }
 
-    public static void setAffirmationList(AffirmationList affirmationList) {
-        Resources.affirmationList = affirmationList;
-    }
-
-    public static LinksDealsNotes getLinksDealsNotes() {
+    public LinksDealsNotes getLinksDealsNotes() {
         return linksDealsNotes;
     }
 
-    public static void setLinksDealsNotes(LinksDealsNotes linksDealsNotes) {
-        Resources.linksDealsNotes = linksDealsNotes;
-    }
 }

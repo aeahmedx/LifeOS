@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class CompletionList {
 
-   static ArrayList<CompletedItem> completedItems;
+   private ArrayList<CompletedItem> completedItems;
 
-    public static ArrayList<CompletedItem> getCompletedItems() {
+    public ArrayList<CompletedItem> getCompletedItems() {
         return completedItems;
     }
 
-    public static void setCompletedItems(ArrayList<CompletedItem> completedItems) {
-        CompletionList.completedItems = completedItems;
+    public void setCompletedItems(ArrayList<CompletedItem> completedItems) {
+        this.completedItems = completedItems;
     }
 }

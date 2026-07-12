@@ -10,7 +10,4 @@ public class OpenLoops {
         return openLoops;
     }
 
-    public static void setOpenLoops(ArrayList<OpenLoop> openLoops) {
-        OpenLoops.openLoops = openLoops;
-    }
 }

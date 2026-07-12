@@ -2,22 +2,22 @@ package LifeOS.DayToDay.OpenLoops;
 
 public class OpenLoop {
 
-    static String openLoop;
-    static String category;
+    private String openLoop;
+    private String category;
 
-    public static String getOpenLoop() {
+    public String getOpenLoop() {
         return openLoop;
     }
 
-    public static void setOpenLoop(String openLoop) {
-        OpenLoop.openLoop = openLoop;
+    public void setOpenLoop(String openLoop) {
+        this.openLoop = openLoop;
     }
 
-    public static String getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public static void setCategory(String category) {
-        OpenLoop.category = category;
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
