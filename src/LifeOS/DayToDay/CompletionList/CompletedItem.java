@@ -1,9 +1,10 @@
 package LifeOS.DayToDay.CompletionList;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
 
 public class CompletedItem {
 
-    static ArrayList<CompletedItem> completedItems;
+    static String completedItems;
+    static LocalDate date;
 
 }

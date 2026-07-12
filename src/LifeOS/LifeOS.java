@@ -10,5 +10,4 @@ public class LifeOS {
     static Resources resources;
     static Overarch overarch;
 
-
 }

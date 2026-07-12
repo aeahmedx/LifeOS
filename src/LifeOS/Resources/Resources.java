@@ -14,5 +14,35 @@ public class Resources {
     static AffirmationList affirmationList;
     static LinksDealsNotes linksDealsNotes;
 
+    public static Exercises getExercises() {
+        return exercises;
+    }
 
+    public static void setExercises(Exercises exercises) {
+        Resources.exercises = exercises;
+    }
+
+    public static GroceryList getGroceryList() {
+        return groceryList;
+    }
+
+    public static void setGroceryList(GroceryList groceryList) {
+        Resources.groceryList = groceryList;
+    }
+
+    public static AffirmationList getAffirmationList() {
+        return affirmationList;
+    }
+
+    public static void setAffirmationList(AffirmationList affirmationList) {
+        Resources.affirmationList = affirmationList;
+    }
+
+    public static LinksDealsNotes getLinksDealsNotes() {
+        return linksDealsNotes;
+    }
+
+    public static void setLinksDealsNotes(LinksDealsNotes linksDealsNotes) {
+        Resources.linksDealsNotes = linksDealsNotes;
+    }
 }
