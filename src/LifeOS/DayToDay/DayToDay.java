@@ -18,6 +18,8 @@ public class DayToDay {
     private DailyCompoundingHabits dailyCompoundingHabits;
     private AppointmentsMeetings appointments;
 
+    public DayToDay() {}
+
     public Today getToday() {
         return today;
     }

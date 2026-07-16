@@ -5,6 +5,15 @@ public class Habit {
     private String habitname;
     private int minutes;
 
+    public Habit() {
+        this.habitname = habitname;
+        this.minutes = minutes;
+    }
+
+    public Habit() {
+        this.habitname = habitname;
+    }
+
     public String getHabitname() {return habitname;}
 
     public void setHabitname(String habitname) {

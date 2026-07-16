@@ -5,6 +5,15 @@ public class OpenLoop {
     private String openLoop;
     private String category;
 
+    public OpenLoop() {
+        this.openLoop = openLoop;
+        this.category = category;
+    }
+
+    public OpenLoop(String openLoop) {
+        this.openLoop = openLoop;
+    }
+
     public String getOpenLoop() {
         return openLoop;
     }
