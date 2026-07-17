@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class CompletionList {
 
    private ArrayList<CompletedItem> completedItems;
+   private ArrayList<CompletedItem> todayitems;
 
     public ArrayList<CompletedItem> getCompletedItems() {
         return completedItems;
@@ -20,10 +21,19 @@ public class CompletionList {
         }
     }
 
-    public void displayAllCompletedItems() {
-        while ()
-            System.out.println((i + 1) + ". " + completedItems.get(i));
+/// boolean flag on today tasks + date marker//    
+    public void displayTodaysCompletedItems() {
+        for (i = 0; i < completedItems.size(); i++) {
+
+            
+            
+            if todayitems.get(i).date = LocalDate.now() {
+                Completed
+                todayitems.add()
+            }
+
         }
+        
     }
 
     public void createCompletedItem() {
@@ -45,8 +55,10 @@ public class CompletionList {
         System.out.println("Completed Item To Delete");
         int choice = input.nextInt();
 
-        completedItems.remove(choice -1);
+        completedItems.remove(choice - 1);
     }
+
+
 
 
 

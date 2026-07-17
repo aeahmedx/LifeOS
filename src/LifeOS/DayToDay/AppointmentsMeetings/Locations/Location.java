@@ -5,12 +5,17 @@ public class Location {
     private Address address;
     private VirtualLocation virtualLocation;
 
-    public VirtualLocation getVirtualLocation() {
+    public getAddress() {
+        return address;
+    }
+
+    public getVirtualLocation() {
         return virtualLocation;
     }
 
-    public Address getAddress() {
-        return address;
+    public setAddress() {
+        
     }
+
 
 }
