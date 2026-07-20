@@ -5,6 +5,8 @@ public class Location {
     private Address address;
     private VirtualLocation virtualLocation;
 
+    public Location() {}
+
     public getAddress() {
         return address;
     }
@@ -13,9 +15,12 @@ public class Location {
         return virtualLocation;
     }
 
-    public setAddress() {
-        
+      public setVirtualLocation(VirtualLocation virtualLocation) {
+        this.virtualLocation = virtualLocation;
     }
 
+    public setAddress(Address Address) {
+        this.address = address;
+    }
 
 }

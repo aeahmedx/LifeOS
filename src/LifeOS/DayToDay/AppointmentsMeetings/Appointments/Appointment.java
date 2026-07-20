@@ -7,10 +7,18 @@ import java.time.LocalDateTime;
 public class Appointment {
 
     private String apptTitle;
-    private String meetingtype;
+    private String appttype;
     private Location apptlocation;
     private LocalDateTime appttime;
     private String apptNotes;
+
+    public Appointment(String apptTitle, String appttype, Location apptlocation, LocalDateTime appttime, String apptNotes) {
+        this.apptTitle = apptTitle;
+        this.appttype = appttype;
+        this.apptlocation = apptlocation;
+        this.appttime = appttime;
+        this.apptNotes = apptNotes;
+    }
 
 
     public String getApptTitle() {
