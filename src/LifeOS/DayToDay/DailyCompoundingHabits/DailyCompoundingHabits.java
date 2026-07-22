@@ -7,6 +7,10 @@ public class DailyCompoundingHabits {
 
     private ArrayList<Habit> habits;
 
+    public DailyCompoundingHabits() {
+        habits = new ArrayList<>();
+    }
+
     public ArrayList<Habit> getHabits() {
         return habits;
     }
