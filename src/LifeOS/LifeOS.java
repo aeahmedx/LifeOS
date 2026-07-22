@@ -10,6 +10,10 @@ public class LifeOS {
     static Resources resources;
     static Overarch overarch;
 
-    public LifeOS() {}
+    public LifeOS() {
+        dayToDay = new DayToDay();
+        resources = new Resources();
+        overarch = new Overarch();
+    }
 
 }

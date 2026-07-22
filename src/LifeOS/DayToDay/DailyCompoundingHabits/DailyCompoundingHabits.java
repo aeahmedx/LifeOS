@@ -1,6 +1,7 @@
 package LifeOS.DayToDay.DailyCompoundingHabits;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class DailyCompoundingHabits {
 
@@ -10,13 +11,13 @@ public class DailyCompoundingHabits {
         return habits;
     }
 
-    public String displayHabits() {
-        for(i = 0; i < habits.size(); i++) {
-            System.ot.println((i+1) + ". " + habits.get(i));
+    public void displayHabits() {
+        for (int i = 0; i < habits.size(); i++) {
+            System.out.println((i + 1) + ". " + habits.get(i));
         }
     }
 
-    public void createNewHabit(String habit, int minutes) {
+    public void createNewHabit() {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Add new habit: ");
@@ -25,9 +26,10 @@ public class DailyCompoundingHabits {
         System.out.println("How long? (minutes): ");
         int minutes = input.nextInt();
 
-        OpenLoops new = openloop OpenLoop(habit, minutes);
 
-        habits.add(openloop);
+        Habit newhabit = new Habit(habit, minutes);
+
+        habits.add(newhabit);
     }
 
     public void deleteHabit() {
@@ -36,7 +38,7 @@ public class DailyCompoundingHabits {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Select habit to delete" );
-        choice int = input.nextLine();
+        int choice = input.nextInt();
 
         habits.remove(choice - 1);
 

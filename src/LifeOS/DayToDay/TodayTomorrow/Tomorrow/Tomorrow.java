@@ -3,37 +3,38 @@ package LifeOS.DayToDay.TodayTomorrow.Tomorrow;
 import LifeOS.DayToDay.TodayTomorrow.Task;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Tomorrow {
 
     private ArrayList<Task> tomorrowtask;
 
+    public Tomorrow() {
+        tomorrowtask = new ArrayList<>();
+    }
+
     public ArrayList<Task> getTomorrowtask() {
         return tomorrowtask;
     }
 
-    public void Tomorrow() {
 
-    }
-
-    public ArrayList<Task> displayTomorrowTasks() {
+    public void displayTomorrowTasks() {
         for (int i = 0; i < tomorrowtask.size(); i++) {
-            System.out.println((i+1) + ". " + tomorrowtask.get(i).getTask());
+            System.out.println((i + 1) + ". " + tomorrowtask.get(i).getTask());
         }
-        
     }
 
     public void createTomorrowTask() {
 
-        Scanner input = new Scanner();
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Task Title: ")
-        String title = nextLine.Scanner(System.in);
+        System.out.println("Task Title: ");
+        String title = input.nextLine();
 
         System.out.println("Priority Level: ");
-        int prioritylvl = nextInt.input();
+        int prioritylvl = input.nextInt();
 
-        Task new = task Task(title, prioritylvl);
+        Task task = new Task(title, prioritylvl);
 
         tomorrowtask.add(task);
 
@@ -47,7 +48,7 @@ public class Tomorrow {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Select a task to delete: ");
-        int choice = nextInt.input();
+        int choice = input.nextInt();
 
         tomorrowtask.remove(choice-1);
 

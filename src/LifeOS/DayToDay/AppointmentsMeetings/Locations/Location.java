@@ -5,21 +5,30 @@ public class Location {
     private Address address;
     private VirtualLocation virtualLocation;
 
-    public Location() {}
-
-    public getAddress() {
-        return address;
+    public Location() {
     }
 
-    public getVirtualLocation() {
-        return virtualLocation;
+    public Location(Address address) {
+        this.address =  address;
     }
 
-      public setVirtualLocation(VirtualLocation virtualLocation) {
+    public Location(VirtualLocation virtualLocation) {
         this.virtualLocation = virtualLocation;
     }
 
-    public setAddress(Address Address) {
+    public Address getAddress() {
+        return address;
+    }
+
+    public VirtualLocation getVirtualLocation() {
+        return virtualLocation;
+    }
+
+    public void setVirtualLocation(VirtualLocation virtualLocation) {
+        this.virtualLocation = virtualLocation;
+    }
+
+    public void setAddress(Address address) {
         this.address = address;
     }
 

@@ -5,8 +5,11 @@ import LifeOS.DayToDay.CompletionList.CompletionList;
 import LifeOS.DayToDay.DailyCompoundingHabits.DailyCompoundingHabits;
 import LifeOS.DayToDay.Finances.Finances;
 import LifeOS.DayToDay.OpenLoops.OpenLoops;
+import LifeOS.DayToDay.TodayTomorrow.Task;
 import LifeOS.DayToDay.TodayTomorrow.Today.Today;
 import LifeOS.DayToDay.TodayTomorrow.Tomorrow.Tomorrow;
+
+import java.util.ArrayList;
 
 public class DayToDay {
 
@@ -18,7 +21,15 @@ public class DayToDay {
     private DailyCompoundingHabits dailyCompoundingHabits;
     private AppointmentsMeetings appointments;
 
-    public DayToDay() {}
+    public DayToDay() {
+        today = new Today();
+        openLoops = new OpenLoops();
+        completionList = new CompletionList();
+        tomorrow = new Tomorrow();
+        finances = new Finances();
+        dailyCompoundingHabits = new DailyCompoundingHabits();
+        appointments = new AppointmentsMeetings();
+    }
 
     public Today getToday() {
         return today;

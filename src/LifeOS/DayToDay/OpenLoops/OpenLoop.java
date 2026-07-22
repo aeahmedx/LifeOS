@@ -5,7 +5,7 @@ public class OpenLoop {
     private String openLoop;
     private String category;
 
-    public OpenLoop() {
+    public OpenLoop(String openLoop, String category) {
         this.openLoop = openLoop;
         this.category = category;
     }

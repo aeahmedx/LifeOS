@@ -6,12 +6,12 @@ public class MoneyIn {
     private String source;
 
     public MoneyIn(double moneyin, String source) {
-        this.moneyin = moneyin
+        this.moneyin = moneyin;
         this.source = source;
     }
 
     public MoneyIn(double moneyin) {
-        this.moneyin = moneyin
+        this.moneyin = moneyin;
     }
 
     public double getMoneyin() {
@@ -23,4 +23,11 @@ public class MoneyIn {
     }
 
 
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
 }

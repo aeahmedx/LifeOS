@@ -5,12 +5,12 @@ public class Address {
     private String street;
     private String city;
     private String state;
-    private String postalCode;
+    private int postalCode;
 
-    public Address(String street, String city, String state, int zip) {
+    public Address(String street, String city, String state, int postalCode) {
         this.street = street;
         this.city = city;
-        this.state = state
+        this.state = state;
         this.postalCode = postalCode;
     }
 
@@ -22,11 +22,11 @@ public class Address {
         this.street = street;
     }
 
-    public String getPostalCode() {
+    public int getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(String postalCode) {
+    public void setPostalCode(int postalCode) {
         this.postalCode = postalCode;
     }
 

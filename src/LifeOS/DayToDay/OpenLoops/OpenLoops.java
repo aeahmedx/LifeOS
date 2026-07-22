@@ -1,42 +1,47 @@
 package LifeOS.DayToDay.OpenLoops;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class OpenLoops {
 
-    static ArrayList<OpenLoop> openLoops;
+    public ArrayList<OpenLoop> openLoops;
 
-    public static ArrayList<OpenLoop> getOpenLoops() {
+    public OpenLoops() {
+        openLoops = new ArrayList<>();
+    }
+
+    public ArrayList<OpenLoop> getOpenLoops() {
         return openLoops;
     }
 
-    public String displayOpenLoops() {
-        for (int i = 0; i < OpenLoops.size(); i++) {
-            System.out.println((i+1) + ". " + openLoops.get(1).getOpenLoop());
+    public void displayOpenLoops() {
+        for (int i = 0; i < openLoops.size(); i++) {
+            System.out.println((i+1) + ". " + openLoops.get(i).getOpenLoop());
         }
     }
 
     public void createNewLoop() {
         Scanner input = new Scanner(System.in);
-        System.print.outln("Enter open loop: ");
-        String loop = input.nextLine;
+        System.out.println("Enter open loop: ");
+        String loop = input.nextLine();
 
         System.out.println("Enter category: ");
-        String category = input.nextLine;
+        String category = input.nextLine();
 
         OpenLoop openloop = new OpenLoop(loop, category);
 
-        openLoops.add(openloop)
+        openLoops.add(openloop);
 
         input.close();
     }
 
-    public void deletOpenLoop() {
+    public void deleteOpenLoop() {
         displayOpenLoops();
         Scanner input = new Scanner(System.in);
 
         System.out.println("Select a loop to delete: ");
-        int choice = nextInt.input();
+        int choice = input.nextInt();
 
         openLoops.remove(choice - 1);
 

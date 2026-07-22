@@ -4,21 +4,26 @@ import LifeOS.DayToDay.Finances.MoneyIn.MoneyIn;
 import LifeOS.DayToDay.Finances.MoneyOut.MoneyOut;
 
 import java.util.ArrayList;
-
-import static java.lang.Double.sum;
+import java.util.Scanner;
 
 public class Finances {
 
-    private ArrayList<MoneyIn> moneyin;
-    private ArrayList<MoneyOut> moneyout;
+    private ArrayList<MoneyIn> moneyIn;
+    private ArrayList<MoneyOut> moneyOut;
     private double runningBalance;
 
-    public ArrayList<MoneyIn> getMoneyin() {
-        return moneyin;
+    public Finances() {
+        moneyIn = new ArrayList<>();
+        moneyOut = new ArrayList<>();
+        runningBalance = 0;
     }
 
-    public ArrayList<MoneyOut> getMoneyout() {
-        return moneyout;
+    public ArrayList<MoneyIn> getMoneyIn() {
+        return moneyIn;
+    }
+
+    public ArrayList<MoneyOut> getMoneyOut() {
+        return moneyOut;
     }
 
     public void setRunningBalance(double runningBalance) {
@@ -33,15 +38,17 @@ public class Finances {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Money received: ")
-        int moenyin = input.nextInt();
+        System.out.println("Money received: ");
+        double in = input.nextDouble();
+        input.nextLine();
 
-        System.out.println("Source: ")
-        int source = input.nextLine();
+        System.out.println("Source: ");
+        String source = input.nextLine();
 
-        MoneyIn moneyin = new MoneyIn(moneyin, source);
+        MoneyIn moneyin = new MoneyIn(in, source);
 
-        moneyin.add(moneyin);
+        moneyIn.add(moneyin);
+        updateRunningBalance();
         
     }
 
@@ -49,15 +56,17 @@ public class Finances {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Money used: ")
-        int moenyout = input.nextInt();
+        System.out.println("Money used: ");
+        double out = input.nextDouble();
+        input.nextLine();
 
-        System.out.println("Source: ")
-        int source = input.nextLine();
+        System.out.println("Source: ");
+        String source = input.nextLine();
 
-        MoneyOut moneyout = new MoneyOut(moneyout, source);
+        MoneyOut moneyout = new MoneyOut(out, source);
 
-        moneyout.add(moneyout);
+        moneyOut.add(moneyout);
+        updateRunningBalance();
         
     }
 
@@ -65,15 +74,17 @@ public class Finances {
         
         double runningBalance = 0;
 
-        for (int i = 0; i < moneyin.size(); i++) {
-            double transaction = moneyin.get(i).getMoneyin();
+        for (int i = 0; i < moneyIn.size(); i++) {
+            double transaction = moneyIn.get(i).getMoneyin();
             runningBalance += transaction;
         }
 
-        for (int i = 0; i < moneyout.size(); i++) {
-            double transaction = moneyout.get(i).getMoneyout();
+        for (int i = 0; i < moneyOut.size(); i++) {
+            double transaction = moneyOut.get(i).getMoneyOut();
             runningBalance -= transaction;
         }
+
+        this.runningBalance = runningBalance;
 
     }
 

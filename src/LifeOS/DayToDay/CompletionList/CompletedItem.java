@@ -8,20 +8,20 @@ public class CompletedItem {
     private LocalDate date;
 
     public CompletedItem(String completedItem, LocalDate date) {
-        this.completedItem = completedItem
+        this.completedItem = completedItem;
         this.date = date;
     }
 
-    public completedItem() {
+    public CompletedItem(String completedItem) {
         this.completedItem = completedItem;
     }
 
-    public String getCompletedItems() {
-        return completedItems;
+    public String getCompletedItem() {
+        return completedItem;
     }
 
     public void setCompletedItems(String completedItems) {
-        this.completedItems = completedItems;
+        this.completedItem = completedItems;
     }
 
 }

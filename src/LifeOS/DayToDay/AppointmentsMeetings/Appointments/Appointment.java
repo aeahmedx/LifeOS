@@ -30,11 +30,11 @@ public class Appointment {
     }
 
     public String getMeetingtype() {
-        return meetingtype;
+        return appttype;
     }
 
     public void setMeetingtype(String meetingtype) {
-        this.meetingtype = meetingtype;
+        this.appttype = meetingtype;
     }
 
     public Location getApptlocation() {

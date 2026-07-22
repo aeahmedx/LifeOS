@@ -1,16 +1,28 @@
 package LifeOS;
 
+import LifeOS.DayToDay.Finances.Finances;
+
 public class TerminalOS {
 
     public static void main(String[] args) {
 
+
         System.out.println("Life OS");
 
-        LifeOS new = lifeOS LifeOS();
+        LifeOS lifeOS = new LifeOS();
 
-        createTodayTask();
+        Finances  finances = new Finances();
 
-        getToday();
+        finances.recordMoneyIn();
+        finances.recordMoneyOut();
+
+        finances.updateRunningBalance();
+
+        System.out.println(finances.getRunningBalance());
+
+        System.out.println(finances.getMoneyIn().size());
+        System.out.println(finances.getMoneyOut().size());
+
 
     }
 }

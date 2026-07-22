@@ -5,26 +5,28 @@ public class MoneyOut {
     private double moneyout;
     private String source;
 
-    public MoneyIn(double moneyout, String source) {
-        this.moneyin = moneyout
-        this.source = source;
-    }
-
     public MoneyOut(double moneyout) {
-        this.moneyout = moneyout
-    }
-
-    public MoneyOut(double moneyout, String source) {
-        this.moneyout = moneyout
-        this.source = source;
-    }
-
-    private double getMoneyout() {
-        return moneyout;
-    }
-
-    public void setMoneyout(double moneyout) {
         this.moneyout = moneyout;
     }
 
+    public MoneyOut(double moneyout, String source) {
+        this.moneyout = moneyout;
+        this.source = source;
+    }
+
+    public double getMoneyOut() {
+        return moneyout;
+    }
+
+    public void setMoneyOut(double moneyout) {
+        this.moneyout = moneyout;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
 }

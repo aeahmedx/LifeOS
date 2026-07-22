@@ -2,22 +2,22 @@ package LifeOS.DayToDay.DailyCompoundingHabits;
 
 public class Habit {
 
-    private String habitname;
+    private String habit;
     private int minutes;
 
-    public Habit() {
-        this.habitname = habitname;
+    public Habit(String habit, int minutes) {
+        this.habit = habit;
         this.minutes = minutes;
     }
 
-    public Habit() {
-        this.habitname = habitname;
+    public Habit(String habit) {
+        this.habit = habit;
     }
 
-    public String getHabitname() {return habitname;}
+    public String getHabitName() {return habit;}
 
-    public void setHabitname(String habitname) {
-        this.habitname = habitname;
+    public void setHabitName(String habit) {
+        this.habit = habit;
     }
 
     public int getMinutes() {

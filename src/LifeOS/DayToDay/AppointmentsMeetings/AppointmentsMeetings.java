@@ -1,7 +1,7 @@
 package LifeOS.DayToDay.AppointmentsMeetings;
-import LifeOS.DayToDay.AppointmentsMeetings.Location;
-import LifeOS.DayToDay.AppointmentsMeetings.Address;
-import LifeOS.DayToDay.AppointmentsMeetings.VirtualLocation;
+import LifeOS.DayToDay.AppointmentsMeetings.Locations.Location;
+import LifeOS.DayToDay.AppointmentsMeetings.Locations.Address;
+import LifeOS.DayToDay.AppointmentsMeetings.Locations.VirtualLocation;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class AppointmentsMeetings {
 
-    private ArrayList<Appointment> appointments;
+    private ArrayList<Appointment> appointments = new ArrayList<Appointment>();;
     private ArrayList<Meeting> meetings;
 
         
@@ -44,7 +44,9 @@ public class AppointmentsMeetings {
         input.nextLine();
 
         String appttype;
-        Location location = new Location();
+        Location location;
+
+
 
             if (choice == 1) {
                 
@@ -65,10 +67,10 @@ public class AppointmentsMeetings {
 
                 Address address = new Address(street, city, state, postalCode);
 
-                location.setAddress(address);
+                location = new Location(address);
             
             }
-            else {
+            else if (choice == 2) {
 
                 appttype = "Virtual";
 
@@ -77,7 +79,11 @@ public class AppointmentsMeetings {
 
                 VirtualLocation virtualLocation = new VirtualLocation(virtual);
 
-                location.setVirtualLocation(virtualLocation);
+                location = new Location(virtualLocation);
+            }
+            else{
+                System.out.println("Invalid Choice");
+                return;
             }
 
             System.out.println("Appointment Time: ");
